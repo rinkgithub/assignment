@@ -52,7 +52,7 @@ Output:
 
 Install and Configure PHP
 
-sudo apt install php-fpm php-mysql php-curl php-gd php-mbstring php-xml php-xmlrpc php-zip
+sudo apt install php-mysql php-gd php-common php-mbstring php-curl php-cli -y
 
 Install and Configure Mysql
 

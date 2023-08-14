@@ -20,4 +20,4 @@ jobs:
 
     - name: Deploy to VPS
       run: |
-        rsync -avz --delete -e "ssh -i C:/Users/Admin/Downloads" /wordpress ubuntu@3.111.187.8:/var/www/html/
+        rsync -avz --delete -e "ssh -i C:/Users/Admin/Downloads/mumbainewkey" /wordpress ubuntu@3.111.187.8:/var/www/html/

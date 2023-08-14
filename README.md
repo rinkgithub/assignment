@@ -54,6 +54,10 @@ Install and Configure PHP
 
 sudo apt install php-mysql php-gd php-common php-mbstring php-curl php-cli -y
 
+sudo systemctl restart nginx
+
+sudo apt install php-fpm -y
+
 Install and Configure Mysql
 
 sudo apt install mysql-server

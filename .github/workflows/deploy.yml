@@ -1,0 +1,23 @@
+name: Deploy to VPS
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Install dependencies
+      run: |
+        sudo apt update
+        sudo apt install -y ssh rsync
+
+    - name: Deploy to VPS
+      run: |
+        rsync -avz --delete -e "ssh -i C:/Users/Admin/Downloads" /wordpress ubuntu@3.111.187.8:/var/www/html/
